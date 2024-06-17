@@ -140,6 +140,7 @@ cd as101-4-workshop # if you're not already in this directory
 echo "talisman -g pre-commit" >> .git/hooks/pre-commit
 chmod +x .git/hooks/pre-commit
 ```
+For more detail about option2 feel free to have a look - [here](https://github.com/thoughtworks/talisman?tab=readme-ov-file#install-onto-path-recommended-approach)
 
 
 ### Installation as a Global Hook Template
