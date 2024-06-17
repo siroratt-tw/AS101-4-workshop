@@ -116,14 +116,16 @@ Talisman provides
 [instructions](https://github.com/thoughtworks/talisman#installation-to-a-single-project) for
 installing to a single repository:
 
+1. Download the talisman installer script
 ```bash
-# Download the talisman installer script
 curl https://thoughtworks.github.io/talisman/install.sh > ~/install-talisman.sh 
 chmod +x ~/install-talisman.sh 
 ```
 
+2. Install to a single project as a git pre-commit hook
+Therea re 2 options to do so
+#### Option1
 ```bash
-# Install to a single project as a pre-commit hook
 cd as101-4-workshop # if you're not already in this directory
 ~/install-talisman.sh pre-commit
 ```
@@ -131,6 +133,13 @@ cd as101-4-workshop # if you're not already in this directory
 The screenshot below indicates that the installation was successful
 <img width="1281" alt="Screenshot 2567-06-17 at 15 29 29" src="https://github.com/siroratt-tw/AS101-4-workshop/assets/60591180/692cb159-80b1-483e-8508-31d402360f98">
 
+
+#### Option2
+```bash
+cd as101-4-workshop # if you're not already in this directory
+echo "talisman -g pre-commit" >> .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
 
 
 ### Installation as a Global Hook Template
