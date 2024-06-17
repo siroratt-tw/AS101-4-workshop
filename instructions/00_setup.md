@@ -118,8 +118,8 @@ installing to a single repository:
 
 ```bash
 # Download the talisman installer script
-curl https://raw.githubusercontent.com/thoughtworks/talisman/master/install.sh > ~/install-talisman.sh
-chmod +x ~/install-talisman.sh
+curl https://thoughtworks.github.io/talisman/install.sh > ~/install-talisman.sh 
+chmod +x ~/install-talisman.sh 
 ```
 
 ```bash
@@ -127,6 +127,11 @@ chmod +x ~/install-talisman.sh
 cd as101-4-workshop # if you're not already in this directory
 ~/install-talisman.sh pre-commit
 ```
+
+The screenshot below indicates that the installation was successful
+<img width="1281" alt="Screenshot 2567-06-17 at 15 29 29" src="https://github.com/siroratt-tw/AS101-4-workshop/assets/60591180/692cb159-80b1-483e-8508-31d402360f98">
+
+
 
 ### Installation as a Global Hook Template
 
